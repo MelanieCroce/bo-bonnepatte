@@ -1,1 +1,1 @@
-# bo-strapi
+# Back office Bonne Patte
