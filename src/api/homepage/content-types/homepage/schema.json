@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "aboutUs": {
+      "type": "richtext",
+      "required": true
+    },
+    "textPro": {
+      "type": "richtext",
+      "required": true
+    },
+    "titleReason": {
+      "type": "string",
+      "required": true
+    },
+    "reasonPro": {
+      "type": "dynamiczone",
+      "components": [
+        "bloc-reason.bloc-raison"
+      ]
+    },
+    "titleBlog": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::categorie.categorie"
+    }
+  }
+}
