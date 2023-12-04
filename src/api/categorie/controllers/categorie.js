@@ -16,4 +16,4 @@ module.exports = createCoreController('api::categorie.categorie', ({strapi}) => 
 
         return this.transformResponse(sanitizedEntity);
     }
-})});
+}));
