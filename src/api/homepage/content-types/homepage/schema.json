@@ -17,14 +17,6 @@
       "required": true,
       "unique": true
     },
-    "aboutUs": {
-      "type": "richtext",
-      "required": true
-    },
-    "textPro": {
-      "type": "richtext",
-      "required": true
-    },
     "titleReason": {
       "type": "string",
       "required": true
@@ -43,6 +35,30 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::categorie.categorie"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "aboutUs": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "textPro": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "buttonPro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "button.boutons"
     }
   }
 }

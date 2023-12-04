@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_bloc_service_services",
+  "info": {
+    "displayName": "Services",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

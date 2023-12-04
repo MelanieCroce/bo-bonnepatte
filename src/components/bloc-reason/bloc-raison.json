@@ -1,13 +1,17 @@
 {
   "collectionName": "components_bloc_reason_bloc_raisons",
   "info": {
-    "displayName": "Bloc raison"
+    "displayName": "Bloc raison",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "texte": {
-      "type": "richtext",
-      "required": true
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

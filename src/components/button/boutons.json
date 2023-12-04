@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_button_boutons",
+  "info": {
+    "displayName": "Boutons",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Link": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

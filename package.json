@@ -11,10 +11,14 @@
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^2.0.4",
+    "@notum-cz/strapi-plugin-content-versioning": "^1.1.4",
+    "@strapi/plugin-documentation": "^4.15.0",
     "@strapi/plugin-i18n": "4.12.7",
+    "@strapi/plugin-seo": "^1.9.6",
     "@strapi/plugin-users-permissions": "4.12.7",
-    "@strapi/strapi": "4.12.7",
+    "@strapi/strapi": "4.15.0",
     "better-sqlite3": "8.5.0",
+    "strapi-plugin-config-sync": "^1.2.2",
     "strapi-plugin-import-export-entries": "^1.21.1"
   },
   "author": {

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_betas",
+  "info": {
+    "singularName": "email-beta",
+    "pluralName": "email-betas",
+    "displayName": "emailBeta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "isPro": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "comment": {
+      "type": "richtext"
+    }
+  }
+}
