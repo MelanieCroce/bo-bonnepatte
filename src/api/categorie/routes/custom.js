@@ -2,7 +2,7 @@ module.exports = {
     routes: [
         {
             method: 'GET',
-            path: '/categorie/:slug',
+            path: '/categories/:slug',
             handler: 'categorie.findOne',
             config: {
                 auth: false,
