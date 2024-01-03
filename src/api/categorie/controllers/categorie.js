@@ -10,7 +10,8 @@ module.exports = createCoreController('api::categorie.categorie', ({strapi}) => 
     async findOne(ctx) {
         const {slug} = ctx.params;
         const entity =  await strapi.db.query('api::categorie.categorie').findOne({
-            where: {slug}
+            where: {slug},
+            populate: ['jobs']
         });
         const sanitizedEntity = await this.sanitizeOutput(entity);
 
